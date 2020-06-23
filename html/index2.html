@@ -1,0 +1,678 @@
+<!--SOUVENIR SHOP-->
+<!DOCTYPE html>
+<html lang="en">
+  <!--Head-->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOUVENIR SHOP</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Piedra&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link rel="stylesheet" href="/css/index2.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <!--Body-->
+
+  <body>
+    <!--Navbar-->
+    <nav id="n1" class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="">LAHORE</a>
+
+        <!--Responsive Menu-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span><i class="fa fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!--Menu on Left Side-->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item" id="about">
+              <a class="nav-link" href="">Home</a>
+            </li>
+            <!--Dropdown-->
+            <li class="nav-item dropdown" id="about">
+              <a
+                class="nav-link"
+                aria-haspopup="true"
+                aria-expanded="false"
+                data-toggle="dropdown"
+                href="#"
+              >
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="about">
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  data-toggle="tooltip"
+                  title="Rules and guidelines"
+                  >About the site</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  data-toggle="tooltip"
+                  title="DHFA admins"
+                  >History of Lahore</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  data-toggle="tooltip"
+                  title="DHFA moderators"
+                  >Lahore Then and Now</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Sightseeing</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="">Gallery</a></li>
+            <li class="nav-item active">
+              <a class="nav-link active" href="">Souvenir Shop</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Content -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="my-md-2 site-title">SOUVENIR SHOP</h2>
+          </div>
+          <div id="btn" class="col-12">
+            <div class="btn-group">
+              <button
+                class="btn dropdown-toggle my-2"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                USD
+              </button>
+              <div class="text-white dropdown-menu dropdown-menu-right">
+                <a href="" class="dropdown-item">PKR</a>
+                <a href="" class="dropdown-item active">USD</a>
+              </div>
+            </div>
+            <div class="btn-group">
+              <button
+                class="btn dropdown-toggle my-2"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Filter
+              </button>
+              <div class="text-white dropdown-menu dropdown-menu-right">
+                <!-- Group of default radios - option 1 -->
+                <div class="dropdown-item custom-control custom-radio">
+                  <input
+                    type="radio"
+                    class="custom-control-input"
+                    id="defaultGroupExample1"
+                    name="groupOfDefaultRadios"
+                  />
+                  <label class="custom-control-label" for="defaultGroupExample1"
+                    >Option 1</label
+                  >
+                </div>
+
+                <!-- Group of default radios - option 2 -->
+                <div class="dropdown-item custom-control custom-radio">
+                  <input
+                    type="radio"
+                    class="custom-control-input"
+                    id="defaultGroupExample2"
+                    name="groupOfDefaultRadios"
+                    checked
+                  />
+                  <label class="custom-control-label" for="defaultGroupExample2"
+                    >Optionfrgvf 2</label
+                  >
+                </div>
+
+                <!-- Group of default radios - option 3 -->
+                <div class="dropdown-item custom-control custom-radio">
+                  <input
+                    type="radio"
+                    class="custom-control-input"
+                    id="defaultGroupExample3"
+                    name="groupOfDefaultRadios"
+                  />
+                  <label class="custom-control-label" for="defaultGroupExample3"
+                    >Option 3</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div id="cart" class="btn-group">
+              <div class="wrapper">
+                <i class="fa fa-shopping-cart"></i>
+                <span>0</span>
+              </div>
+              <button
+                class="btn my-2"
+                data-toggle="modal"
+                data-target="#mymodal"
+              >
+                View Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="on-sale">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="product-top">
+              <div class="overlay-left">
+                <button type="button" class="btn" title="add to cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+              </div>
+              <img src="/assets/lahore2.jpg" alt="" />
+            </div>
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <i class="fa fa-star-o"></i>
+              <h3>souvenir</h3>
+              <h5>rs.500</h5>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="product-top">
+              <div class="overlay-left">
+                <button type="button" class="btn" title="add to cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+              </div>
+              <img src="/assets/lahore2.jpg" alt="" />
+            </div>
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <i class="fa fa-star-o"></i>
+              <h3>souvenir</h3>
+              <h5>rs.500</h5>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="product-top">
+              <div class="overlay-left">
+                <button type="button" class="btn" title="add to cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+              </div>
+              <img src="/assets/lahore2.jpg" alt="" />
+            </div>
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <i class="fa fa-star-o"></i>
+              <h3>souvenir</h3>
+              <h5>rs.500</h5>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="product-top">
+              <div class="overlay-left">
+                <button type="button" class="btn" title="add to cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+              </div>
+              <img src="/assets/lahore2.jpg" alt="" />
+            </div>
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <i class="fa fa-star-o"></i>
+              <h3>souvenir</h3>
+              <h5>rs.500</h5>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="product-top">
+              <div class="overlay-left">
+                <button type="button" class="btn" title="add to cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+              </div>
+              <img src="/assets/lahore2.jpg" alt="" />
+            </div>
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <i class="fa fa-star-o"></i>
+              <h3>souvenir</h3>
+              <h5>rs.500</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Go To Top -->
+    <div id="gototop">
+      <a href="#n1"><i class="fa fa-chevron-circle-up"></i></a>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4">
+      <div class="container-fluid text-center text-md-left">
+        <div class="row">
+          <div class="col-md-6 mt-md-0 mt-3">
+            <h5>Find more about Lahore</h5>
+            <p>
+              Want to contact or support us? <br />
+              <a href="">Souvenir Shop</a><br />
+              <a href="">Contact</a><br />
+            </p>
+          </div>
+          <hr class="clearfix w-100 d-md-none pb-3" />
+          <div class="col-md-3 mb-md-0 mb-3">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">About</a>
+              </li>
+              <li>
+                <a href="#!">Sightseeing</a>
+              </li>
+              <li>
+                <a href="#!">Gallery</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright:
+        <a href="https://DHFAPakistan.com/">Areeba Naveed</a>
+      </div>
+    </footer>
+
+    <!--modal 1-->
+    <div class="modal fade" id="mymodal">
+      <div
+        class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable shopping-cart"
+      >
+        <div class="modal-content">
+          <!-- Title -->
+          <div class="title modal-title">
+            Shopping Cart
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar">30%</div>
+          </div>
+          <div class="content">
+            <!-- Product #1 -->
+            <div class="item">
+              <div class="delete text-right">
+                <i class="fa fa-trash"></i>
+              </div>
+
+              <div class="image">
+                <img src="/assets/lahore2.jpg" alt="" />
+              </div>
+
+              <div class="description">
+                <span>Badshahi Masjid</span>
+                <span>issa sample</span>
+                <span>lol</span>
+              </div>
+
+              <div class="qty">
+                <div class="plus">
+                  <i class="fa fa-plus-circle"></i>
+                </div>
+                <div class="quantity">
+                  <input type="text" name="name" value="1" />
+                </div>
+                <div class="minus">
+                  <i class="fa fa-minus-circle"></i>
+                </div>
+              </div>
+
+              <div class="total-price">$549</div>
+            </div>
+
+            <!-- Product #2 -->
+            <div class="item">
+              <div class="delete text-right">
+                <i class="fa fa-trash"></i>
+              </div>
+
+              <div class="image">
+                <img src="/assets/lahore2.jpg" alt="" />
+              </div>
+
+              <div class="description">
+                <span>Badshahi Masjid</span>
+                <span>issa sample</span>
+                <span>lol</span>
+              </div>
+
+              <div class="qty">
+                <div class="plus">
+                  <i class="fa fa-plus-circle"></i>
+                </div>
+                <div class="quantity">
+                  <input type="text" name="name" value="1" />
+                </div>
+                <div class="minus">
+                  <i class="fa fa-minus-circle"></i>
+                </div>
+              </div>
+
+              <div class="total-price">$549</div>
+            </div>
+            <!-- Product #3 -->
+            <div class="item">
+              <div class="delete text-right">
+                <i class="fa fa-trash"></i>
+              </div>
+
+              <div class="image">
+                <img src="/assets/lahore2.jpg" alt="" />
+              </div>
+
+              <div class="description">
+                <span>Badshahi Masjid</span>
+                <span>issa sample</span>
+                <span>lol</span>
+              </div>
+
+              <div class="qty">
+                <div class="plus">
+                  <i class="fa fa-plus-circle"></i>
+                </div>
+                <div class="quantity">
+                  <input type="text" name="name" value="1" />
+                </div>
+                <div class="minus">
+                  <i class="fa fa-minus-circle"></i>
+                </div>
+              </div>
+
+              <div class="total-price">$549</div>
+            </div>
+            <!--Product #4-->
+            <div class="item">
+              <div class="delete text-right">
+                <i class="fa fa-trash"></i>
+              </div>
+
+              <div class="image">
+                <img src="/assets/lahore2.jpg" alt="" />
+              </div>
+
+              <div class="description">
+                <span>Badshahi Masjid</span>
+                <span>issa sample</span>
+                <span>lol</span>
+              </div>
+
+              <div class="qty">
+                <div class="plus">
+                  <i class="fa fa-plus-circle"></i>
+                </div>
+                <div class="quantity">
+                  <input type="text" name="name" value="1" />
+                </div>
+                <div class="minus">
+                  <i class="fa fa-minus-circle"></i>
+                </div>
+              </div>
+
+              <div class="total-price">$549</div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn"
+              data-dismiss="modal"
+              data-toggle="modal"
+              data-target="#mymodal2"
+            >
+              Proceed to Payment
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--modal 2-->
+    <div class="modal fade" id="mymodal2">
+      <div
+        class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="title modal-title">
+            Billing Form
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar">60%</div>
+          </div>
+          <div class="row content">
+            <div class="col-75">
+              <div class="container">
+                <form action="/action_page.php">
+                  <div class="row">
+                    <div class="col-50">
+                      <h3>Billing Address</h3>
+                      <label for="fname"
+                        ><i class="fa fa-user"></i> Full Name</label
+                      >
+                      <input
+                        type="text"
+                        id="fname"
+                        name="firstname"
+                        placeholder="John M. Doe"
+                      />
+                      <label for="email"
+                        ><i class="fa fa-envelope"></i> Email</label
+                      >
+                      <input
+                        type="text"
+                        id="email"
+                        name="email"
+                        placeholder="john@example.com"
+                      />
+                      <label for="adr"
+                        ><i class="fa fa-address-card-o"></i> Address</label
+                      >
+                      <input
+                        type="text"
+                        id="adr"
+                        name="address"
+                        placeholder="542 W. 15th Street"
+                      />
+                      <label for="city"
+                        ><i class="fa fa-institution"></i> City</label
+                      >
+                      <input
+                        type="text"
+                        id="city"
+                        name="city"
+                        placeholder="New York"
+                      />
+
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="state">State</label>
+                          <input
+                            type="text"
+                            id="state"
+                            name="state"
+                            placeholder="NY"
+                          />
+                        </div>
+                        <div class="col-50">
+                          <label for="zip">Zip</label>
+                          <input
+                            type="text"
+                            id="zip"
+                            name="zip"
+                            placeholder="10001"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-50">
+                      <h3>Payment</h3>
+                      <label for="fname">Accepted Cards</label>
+                      <div class="icon-container">
+                        <i class="fa fa-cc-visa" style="color: navy;"></i>
+                        <i class="fa fa-cc-amex" style="color: blue;"></i>
+                        <i class="fa fa-cc-mastercard" style="color: red;"></i>
+                        <i class="fa fa-cc-discover" style="color: orange;"></i>
+                      </div>
+                      <label for="cname">Name on Card</label>
+                      <input
+                        type="text"
+                        id="cname"
+                        name="cardname"
+                        placeholder="John More Doe"
+                      />
+                      <label for="ccnum">Credit card number</label>
+                      <input
+                        type="text"
+                        id="ccnum"
+                        name="cardnumber"
+                        placeholder="1111-2222-3333-4444"
+                      />
+                      <label for="expmonth">Exp Month</label>
+                      <input
+                        type="text"
+                        id="expmonth"
+                        name="expmonth"
+                        placeholder="September"
+                      />
+
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="expyear">Exp Year</label>
+                          <input
+                            type="text"
+                            id="expyear"
+                            name="expyear"
+                            placeholder="2018"
+                          />
+                        </div>
+                        <div class="col-50">
+                          <label for="cvv">CVV</label>
+                          <input
+                            type="text"
+                            id="cvv"
+                            name="cvv"
+                            placeholder="352"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <label>
+                    <input type="checkbox" checked="checked" name="sameadr" />
+                    Shipping address same as billing
+                  </label>
+                  <input
+                    type="submit"
+                    value="Continue to checkout"
+                    class="btn"
+                  />
+                </form>
+              </div>
+            </div>
+
+            <div class="col-25">
+              <div class="container">
+                <h4>
+                  Cart
+                  <span class="price" style="color: black;">
+                    <i class="fa fa-shopping-cart"></i>
+                    <b>4</b>
+                  </span>
+                </h4>
+                <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+                <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+                <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+                <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+                <hr />
+                <p>
+                  Total
+                  <span class="price" style="color: black;"><b>$30</b></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

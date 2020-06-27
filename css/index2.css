@@ -267,6 +267,11 @@ body {
 .container .dropdown-item {
   font-size: 0.7em;
 }*/
+
+#filter.dropdown-menu {
+  padding: 20px;
+  padding-right: 0px !important;
+}
 .header-links a {
   font-size: 0.9em;
   text-decoration: none;
@@ -327,6 +332,7 @@ img:hover {
 .product-bottom h3 {
   font-size: 20px;
   font-weight: bold;
+  font-family: "Patrick Hand", cursive;
 }
 .product-bottom h5 {
   font-size: 15px;
@@ -675,6 +681,11 @@ button.close:hover {
   border: 1px solid #ccc;
   border-radius: 3px;
   background-color: var(--purple-color);
+  color: var(--green-color);
+}
+input::placeholder {
+  color: white;
+  opacity: 70%;
 }
 
 label {
@@ -689,7 +700,7 @@ label {
 }
 
 #mymodal2 .btn {
-  background-color: #4caf50;
+  background-color: var(--purple-color);
   color: white;
   padding: 12px;
   margin: 10px 0;
@@ -701,7 +712,8 @@ label {
 }
 
 #mymodal2 .btn:hover {
-  background-color: #45a049;
+  background-color: purple;
+  color: var(--green-color);
 }
 
 span.price {

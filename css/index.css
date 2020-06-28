@@ -354,7 +354,7 @@ span#caption {
   background-color: var(--black-color);
   background-color: rgba(0, 0, 0, 0.95);
 }
-\\ .modal-content {
+.modal-content {
   margin: auto;
   display: block;
   width: 80%;
@@ -363,7 +363,7 @@ span#caption {
 .close {
   top: 15px;
   padding-right: 20px;
-  color: white;
+  color: var(--white-color);
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;

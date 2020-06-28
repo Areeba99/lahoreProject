@@ -646,6 +646,10 @@ button.close:hover {
 #mymodal2 .progress-bar {
   width: 60%;
 }
+.bill {
+  box-shadow: 0px 0px 5px 3px var(--green-color);
+  border-radius: 6px;
+}
 .col-25 {
   -ms-flex: 25%; /* IE10 */
   flex: 25%;

@@ -3,7 +3,7 @@ function openmodal() {
   var modalImg = document.getElementById("img01");
   var captionText = document.getElementById("captionmodal");
   modal.style.display = "block";
-  $("body").css("overflow", "hidden");
+  $("body").css("overflow", "hidden"); //to make body non-scrollable when modal is open
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
   console.log("hello");
@@ -17,8 +17,6 @@ window.onload = function () {
   var modal = document.getElementById("myModal");
   span.onclick = function () {
     modal.style.display = "none";
-    $("body").css("overflow", "auto");
+    $("body").css("overflow", "auto"); //make body scrollable again
   };
 };
-
-// Get the modal

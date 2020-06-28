@@ -2,16 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <!--Head-->
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SOUVENIR SHOP</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    />
-    <!--Fonts-->
+    <title>Souvenir Shop</title>
+    <!--Google Fonts-->
     <link
       href="https://fonts.googleapis.com/css2?family=Piedra&display=swap"
       rel="stylesheet"
@@ -28,7 +23,30 @@
       href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
       rel="stylesheet"
     />
-
+    <!--Favicon-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicon_io/site.webmanifest" />
+    <!--CSS Files-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -38,13 +56,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
     <link rel="stylesheet" href="/css/index2.css" />
+    <!--JS Files-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   </head>
 
   <!--Body-->
-
   <body>
     <!--Navbar-->
     <nav id="n1" class="navbar navbar-expand-lg navbar-light sticky-top">
@@ -64,8 +82,8 @@
           <span><i class="fa fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!--Menu on Left Side-->
           <ul class="navbar-nav ml-auto">
+            <!--Home-->
             <li class="nav-item" id="about">
               <a
                 class="nav-link"
@@ -75,7 +93,7 @@
                 >Home</a
               >
             </li>
-            <!--Dropdown-->
+            <!--About Dropdown-->
             <li class="nav-item dropdown" id="about">
               <a
                 class="nav-link"
@@ -110,6 +128,7 @@
                 >
               </div>
             </li>
+            <!--Sightseeing-->
             <li class="nav-item">
               <a
                 class="nav-link"
@@ -119,6 +138,7 @@
                 >Sightseeing</a
               >
             </li>
+            <!--Gallery-->
             <li class="nav-item">
               <a
                 class="nav-link"
@@ -128,6 +148,7 @@
                 >Gallery</a
               >
             </li>
+            <!--Souvenir Shop-->
             <li class="nav-item active">
               <a
                 class="nav-link active"
@@ -137,6 +158,7 @@
                 >Souvenir Shop</a
               >
             </li>
+            <!--Contact-->
             <li class="nav-item">
               <a
                 class="nav-link"
@@ -150,7 +172,10 @@
         </div>
       </div>
     </nav>
+    <!--Navbar end-->
+
     <!-- Content -->
+    <!--Shop header-->
     <header>
       <div class="container">
         <div class="row">
@@ -169,10 +194,12 @@
               >
                 Currency
               </button>
-              <div class="text-white dropdown-menu dropdown-menu-right">
-                <a href="" class="dropdown-item">PKR</a>
-                <a href="" class="dropdown-item active">USD</a>
+              <!--Currency dropdown-->
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="#" class="dropdown-item">PKR</a>
+                <a href="#" class="dropdown-item active">USD</a>
               </div>
+              <!--Currency dropdown end-->
             </div>
             <div class="btn-group">
               <button
@@ -185,8 +212,9 @@
               >
                 Filter
               </button>
+              <!--Filter dropdown-->
               <div id="filter" class="dropdown-menu dropdown-menu-right">
-                <!-- Group of default radios - option 1 -->
+                <!--Option 1-->
                 <div class="dropdown-item custom-control custom-radio">
                   <input
                     type="radio"
@@ -198,8 +226,7 @@
                     >Alphabetically</label
                   >
                 </div>
-
-                <!-- Group of default radios - option 2 -->
+                <!--Option 2-->
                 <div class="dropdown-item custom-control custom-radio">
                   <input
                     type="radio"
@@ -212,8 +239,7 @@
                     >Price Low to High</label
                   >
                 </div>
-
-                <!-- Group of default radios - option 3 -->
+                <!--Option 3-->
                 <div class="dropdown-item custom-control custom-radio">
                   <input
                     type="radio"
@@ -226,6 +252,7 @@
                   >
                 </div>
               </div>
+              <!--Filter dropdown end-->
             </div>
             <div id="cart" class="btn-group">
               <div class="wrapper">
@@ -246,9 +273,13 @@
         </div>
       </div>
     </header>
+    <!--Shop header end-->
+
+    <!--Products-->
     <main class="on-sale">
       <div class="container">
         <div class="row">
+          <!--Product 1-->
           <div class="col-md-3">
             <div class="product-top">
               <div class="overlay-left">
@@ -268,6 +299,7 @@
               <h5>PKR.200</h5>
             </div>
           </div>
+          <!--Product 2-->
           <div class="col-md-3">
             <div class="product-top">
               <div class="overlay-left">
@@ -287,6 +319,7 @@
               <h5>PKR.300</h5>
             </div>
           </div>
+          <!--Product 3-->
           <div class="col-md-3">
             <div class="product-top">
               <div class="overlay-left">
@@ -306,6 +339,7 @@
               <h5>PKR.450</h5>
             </div>
           </div>
+          <!--Product 4-->
           <div class="col-md-3">
             <div class="product-top">
               <div class="overlay-left">
@@ -325,6 +359,7 @@
               <h5>PKR.600</h5>
             </div>
           </div>
+          <!--Product 5-->
           <div class="col-md-3">
             <div class="product-top">
               <div class="overlay-left">
@@ -344,6 +379,7 @@
               <h5>PKR.600</h5>
             </div>
           </div>
+          <!--Product 6-->
           <div class="col-md-3">
             <div class="product-top">
               <div class="overlay-left">
@@ -363,6 +399,7 @@
               <h5>PKR.800</h5>
             </div>
           </div>
+          <!--Product 7-->
           <div class="col-md-3">
             <div class="product-top">
               <div class="overlay-left">
@@ -382,6 +419,7 @@
               <h5>PKR.850</h5>
             </div>
           </div>
+          <!--Product 8-->
           <div class="col-md-3">
             <div class="product-top">
               <div class="overlay-left">
@@ -404,6 +442,8 @@
         </div>
       </div>
     </main>
+    <!--Products end-->
+    <!--Content end-->
 
     <!-- Go To Top -->
     <div id="gototop">
@@ -411,8 +451,9 @@
         ><i class="fa fa-chevron-circle-up"></i
       ></a>
     </div>
+
     <!-- Footer -->
-    <footer class="page-footer font-small blue pt-4">
+    <footer class="page-footer font-small pt-4">
       <div class="container-fluid text-center text-md-left">
         <div class="row">
           <div class="col-md-6 mt-md-0 mt-3">
@@ -450,8 +491,9 @@
         <a href="https://DHFAPakistan.com/">Areeba Naveed</a>
       </div>
     </footer>
+    <!--Footer end-->
 
-    <!--modal 1-->
+    <!--Modal 1: Shopping Cart-->
     <div class="modal fade" id="mymodal">
       <div
         class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable shopping-cart"
@@ -464,7 +506,7 @@
               &times;
             </button>
           </div>
-
+          <!--Progress bar-->
           <div class="progress">
             <div class="progress-bar">30%</div>
           </div>
@@ -605,20 +647,22 @@
         </div>
       </div>
     </div>
+    <!--Modal 1 end-->
 
-    <!--modal 2-->
+    <!--Modal 2: Billing-->
     <div class="modal fade" id="mymodal2">
       <div
         class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable"
       >
         <div class="modal-content">
+          <!--Title-->
           <div class="title modal-title">
             Billing Form
             <button type="button" class="close" data-dismiss="modal">
               &times;
             </button>
           </div>
-
+          <!--Progress bar-->
           <div class="progress">
             <div class="progress-bar">60%</div>
           </div>
@@ -789,5 +833,8 @@
         </div>
       </div>
     </div>
+    <!--Modal 2 end-->
   </body>
+  <!--Body end-->
 </html>
+<!--THE END-->

@@ -19,27 +19,41 @@
   }
 }
 
-/*create a variable*/
+/*Color Variables*/
 :root {
   --green-color: rgba(120, 255, 58, 1);
   --purple-color: rgba(75, 8, 82, 1);
-  --background-color: rgb(255, 255, 255);
+  --white-color: rgb(255, 255, 255);
   --red-color: red;
+  --black-color: black;
 }
-.primary-color {
-  color: var(--green-color);
-}
-header {
-  background-color: var(--green-color);
-}
+
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--white-color);
+  font-size: calc(0.75em + 1vmin);
 }
 i {
   padding: 5px;
 }
 
-/*Navbar*/
+/*---------------Responsive Font Sizes---------------*/
+@media only screen and (min-width: 240px) {
+  .footer-copyright {
+    font-size: 1em;
+  }
+  .page-footer > div > div > div > p {
+    font-size: 0.8em;
+  }
+  .page-footer > div > div > div > ul > li {
+    font-size: 0.8em;
+  }
+  .page-footer > div > div > div > h5 {
+    font-size: 1em;
+  }
+}
+/*--------------- Responsive Font Sizes end---------------*/
+
+/*---------------Navbar--------------- */
 .navbar {
   background-color: var(--purple-color);
 }
@@ -47,20 +61,53 @@ i.fa-bars {
   color: var(--green-color);
   font-size: 20px;
 }
+.navbar-brand {
+  font-size: 40px !important;
+}
 .navbar-brand:hover {
   text-shadow: 3px 3px 5px var(--green-color);
   transition: 1s;
   padding-left: 5px;
 }
-/*About Dropdown*/
+.navbar-nav > li > a.active,
+.navbar-brand {
+  color: var(--green-color) !important;
+  font-family: "Amatic SC", cursive;
+  font-size: 25px;
+  transition: 1s;
+}
+.navbar-nav > li > a {
+  color: var(--white-color) !important;
+  font-family: "Amatic SC", cursive;
+  font-size: 25px;
+  transition: 0.5s;
+}
+.navbar-nav > li > a:hover {
+  text-shadow: 2px 2px 3px var(--white-color);
+  transition: 0.5s;
+}
+.navbar-nav > li > a.active:hover {
+  text-shadow: 2px 2px 3px var(--green-color);
+  transition: 0.5s;
+}
+.navbar-toggler {
+  color: var(--green-color);
+  border: none;
+}
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
 
+/*About Dropdown*/
 .dropdown-item:hover,
 .dropdown-toggle:active {
   background: none;
 }
 #about:hover > .dropdown-menu {
   display: block;
-  color: rgba(75, 8, 82, 1);
+  color: var(--purple-color);
   background-color: var(--green-color);
 }
 #about > div > a.dropdown-item {
@@ -75,39 +122,14 @@ i.fa-bars {
 }
 .dropdown-item:hover {
   transition: 0.5s;
-  color: red !important;
+  color: var(--red-color) !important;
 }
 .dropdown > .dropdown-toggle:active {
   /*Without this, clicking will make it sticky*/
   pointer-events: none;
 }
-.navbar-nav > li > a.active,
-.navbar-brand {
-  color: var(--green-color) !important;
-  font-family: "Amatic SC", cursive;
-  font-size: 25px;
-  transition: 1s;
-}
-.navbar-brand {
-  font-size: 40px !important;
-}
-.navbar-nav > li > a {
-  color: #fff !important;
-  font-family: "Amatic SC", cursive;
-  font-size: 25px;
-  transition: 0.5s;
-}
-.navbar-nav > li > a:hover {
-  text-shadow: 2px 2px 3px white;
-  transition: 0.5s;
-}
-.navbar-nav > li > a.active:hover {
-  text-shadow: 2px 2px 3px var(--green-color);
-  transition: 0.5s;
-}
 
 /*Navbar transitions*/
-
 ul.navbar-nav > li.nav-item {
   display: inline-block;
   position: relative;
@@ -128,14 +150,87 @@ ul.navbar-nav > li.nav-item:after {
 }
 ul.navbar-nav > li.nav-item:hover:after {
   width: 100%;
-  background: white;
+  background: var(--white-color);
 }
 ul.navbar-nav > li.nav-item.active:hover:after {
   width: 100%;
   background: var(--green-color) !important;
 }
+/*Responsive Navbar*/
+@media only screen and (max-width: 800px) {
+  .navbar-nav.ml-auto {
+    background: var(--purple-color);
+    opacity: 80%;
+  }
+  a.nav-link,
+  a.dropdown-item {
+    text-align: center;
+  }
+  .navbar-toggler {
+    padding: 1px 5px;
+    font-size: 15px;
+    line-height: 0.3;
+  }
+  #about > div > a.dropdown-item {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .container > a.navbar-brand {
+    font-size: 18px !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .container > a.navbar-brand {
+    font-size: 30px !important;
+  }
+}
+/*---------------Navbar end---------------*/
 
-/*buttons*/
+/*---------------Shop header---------------*/
+header {
+  background-color: var(--green-color);
+}
+h2 {
+  color: var(--purple-color);
+  font-family: "Rock Salt", cursive;
+  padding-top: 15px;
+}
+.btn-group > button {
+  font-size: 16px;
+  outline: none;
+  border: none;
+  transition: 0.5s;
+  font-family: "Patrick Hand", cursive;
+}
+#btn {
+  text-align: right;
+}
+.btn-group > button:hover,
+button:focus {
+  color: var(--red-color);
+  transition: 0.5s;
+  outline: none !important;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+a.dropdown-item.active {
+  background-color: none;
+  transition: 0.5s;
+  color: var(--red-color);
+  background: none;
+}
+#filter.dropdown-menu {
+  padding: 20px;
+  padding-right: 0px !important;
+}
+.header-links a {
+  font-size: 0.9em;
+  text-decoration: none;
+  color: var(--white-color);
+}
+/*Cart Button*/
 #cart {
   align-items: center;
 }
@@ -155,70 +250,21 @@ ul.navbar-nav > li.nav-item.active:hover:after {
   width: 15px;
   color: var(--green-color);
 }
-.btn-group > button {
-  font-size: 16px;
-  outline: none;
-  border: none;
-  transition: 0.5s;
-  font-family: "Patrick Hand", cursive;
-}
-#btn {
-  text-align: right;
-}
-.btn-group > button:hover,
-button:focus {
-  color: red;
-  transition: 0.5s;
-  outline: none !important;
-  border: none !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-}
-a.dropdown-item.active {
-  background-color: none;
-  transition: 0.5s;
-  color: red;
-  background: none;
-}
-
-.navbar-toggler {
-  color: rgba(86, 224, 86, 0.7);
-  border: none;
-}
-h2 {
-  color: var(--purple-color);
-  font-family: "Rock Salt", cursive;
-  padding-top: 15px;
-}
+/*Responsive Header*/
 @media only screen and (max-width: 800px) {
-  .navbar-nav.ml-auto {
-    background: var(--purple-color);
-    opacity: 80%;
-  }
-  a.nav-link,
-  a.dropdown-item {
-    text-align: center;
-  }
-  .navbar-toggler {
-    padding: 1px 5px;
-    font-size: 15px;
-    line-height: 0.3;
-  }
-  #about > div > a.dropdown-item {
-    text-align: center;
-  }
   h2 {
     font-size: 27px;
     padding: 20px;
   }
 }
-
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
   h2 {
     font-size: 24px !important;
   }
-  .container > a.navbar-brand {
-    font-size: 18px !important;
+}
+@media only screen and (max-width: 300px) {
+  h2 {
+    font-size: 24px !important;
   }
   #btn {
     text-align: center;
@@ -227,61 +273,13 @@ h2 {
     font-size: 14px;
   }
 }
-@media only screen and (max-width: 400px) {
-  h2 {
-    font-size: 24px !important;
-  }
-  .container > a.navbar-brand {
-    font-size: 30px !important;
-  }
-}
+/*---------------Shop Header end---------------*/
 
-/*Font Size*/
-body {
-  font-size: calc(0.75em + 1vmin);
-}
-@media only screen and (min-width: 240px) {
-  .footer-copyright {
-    font-size: 1em;
-  }
-  .page-footer > div > div > div > p {
-    font-size: 0.8em;
-  }
-  .page-footer > div > div > div > ul > li {
-    font-size: 0.8em;
-  }
-  .page-footer > div > div > div > h5 {
-    font-size: 1em;
-  }
-}
-
-.navbar-nav.navbar-center {
-  position: absolute;
-  left: 50%;
-  transform: translatex(-50%);
-}
-
-/*Shop Header*/
-
-/*.container .dropdown-toggle,
-.container .dropdown-item {
-  font-size: 0.7em;
-}*/
-
-#filter.dropdown-menu {
-  padding: 20px;
-  padding-right: 0px !important;
-}
-.header-links a {
-  font-size: 0.9em;
-  text-decoration: none;
-  color: white;
-}
-
-/*Shop Products*/
+/*---------------Shop Products---------------*/
 main {
   margin-top: 5%;
 }
+/*Product Top*/
 img {
   padding: 5%;
   transition: 0.5s;
@@ -304,9 +302,9 @@ img:hover {
 }
 .overlay-left > button > i.fa {
   cursor: pointer;
-  background-color: white;
+  background-color: var(--white-color);
   border-radius: 50%;
-  color: black;
+  color: var(--black-color);
   height: auto;
   width: auto;
   font-size: 20px;
@@ -325,6 +323,7 @@ img:hover {
   margin-left: 5%;
   transition: 0.5s;
 }
+/*Product Bottom*/
 .product-bottom .fa {
   color: orange;
   font-size: 10px;
@@ -338,8 +337,9 @@ img:hover {
   font-size: 15px;
   padding-bottom: 10px;
 }
+/*---------------Shop Products end---------------*/
 
-/*Go to top*/
+/*---------------Go to Top---------------*/
 i {
   color: var(--purple-color);
   font-size: 20px;
@@ -352,8 +352,9 @@ i:hover {
   margin-bottom: 1%;
   transition: 0.5s;
 }
+/*---------------Go to Top end---------------*/
 
-/*Footer*/
+/*---------------Footer---------------*/
 footer {
   background-color: var(--green-color);
 }
@@ -377,30 +378,30 @@ footer a {
   transition: 0.5s;
 }
 footer > div > div > div > ul > li > a:hover {
-  color: red;
+  color: var(--red-color);
   padding-left: 10px;
   transition: 0.5s;
 }
 footer > div > div > div > p > a:hover {
-  color: red;
+  color: var(--red-color);
   padding-left: 10px;
   transition: 0.5s;
 }
-
 .footer-copyright {
-  background-color: rgb(75, 8, 82);
+  background-color: var(--purple-color);
   color: var(--green-color);
   opacity: 100%;
 }
 .footer-copyright > a:hover {
-  color: red;
+  color: var(--red-color);
   transition: 0.5s;
 }
 .footer-copyright > a {
   color: var(--green-color);
 }
+/*---------------Footer end---------------*/
 
-/*Modal*/
+/*---------------Modal 1: Shopping Cart---------------*/
 .shopping-cart {
   width: 750px;
   height: 470px;
@@ -424,15 +425,27 @@ footer > div > div > div > p > a:hover {
   font-size: 18px;
   font-weight: 400;
 }
+/*Progress bar*/
+.progress-bar {
+  width: 30%;
+  background-color: var(--purple-color);
+}
+.progress {
+  background-color: var(--green-color);
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+/*Items*/
 .item {
   padding: 20px 30px;
   height: 120px;
   display: flex;
-  border-bottom: 1px solid #e1e8ee;
+  border-bottom: 1px solid var(--white-color);
 }
-
 .item:nth-child(3) {
-  border-bottom: 1px solid #e1e8ee;
+  border-bottom: 1px solid var(--white-color);
 }
 .delete {
   position: relative;
@@ -450,20 +463,17 @@ footer > div > div > div > p > a:hover {
 .image {
   margin-right: 50px;
 }
-
 .description {
   padding-top: 10px;
   margin-right: 60px;
   width: 115px;
 }
-
 .description span {
   display: block;
   font-size: 14px;
   color: #43484d;
   font-weight: 400;
 }
-
 .description span:first-child {
   margin-bottom: 5px;
 }
@@ -472,7 +482,6 @@ footer > div > div > div > p > a:hover {
   margin-top: 8px;
   color: #86939e;
 }
-
 .quantity input {
   border: none;
   text-align: center;
@@ -487,7 +496,6 @@ footer > div > div > div > p > a:hover {
   margin-top: -50px;
   align-items: center;
 }
-
 .plus,
 .minus,
 .delete {
@@ -506,7 +514,6 @@ footer > div > div > div > p > a:hover {
 .plus {
   margin-top: 30px;
 }
-
 i:focus,
 input:focus {
   outline: 10;
@@ -520,6 +527,23 @@ input:focus {
   font-weight: 300;
   margin-left: 20px;
 }
+.image > img {
+  width: 150px;
+}
+.modal-footer > button {
+  background-color: var(--purple-color);
+  color: var(--white-color);
+}
+.modal-footer > button:hover,
+.modal-footer > button:focus {
+  background-color: var(--purple-color);
+  color: var(--green-color);
+}
+button.close,
+button.close:hover {
+  color: var(--purple-color);
+}
+/*Responsive Shopping Cart*/
 @media (max-width: 800px) {
   .shopping-cart {
     width: 100%;
@@ -565,6 +589,24 @@ input:focus {
   .delete {
     margin: 20px;
   }
+  .progress-bar {
+    color: var(--purple-color);
+  }
+}
+/*Responsive Modal*/
+@media (max-width: 600px) {
+  .modal-lg {
+    width: 100% !important;
+  }
+  body::-webkit-scrollbar,
+  .modal::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE and Edge */
+  body,
+  .modal {
+    -ms-overflow-style: none;
+  }
 }
 @media (max-width: 500px) {
   .plus {
@@ -590,54 +632,10 @@ input:focus {
     margin-left: 60%;
   }
 }
-.progress-bar {
-  width: 30%;
-  background-color: var(--purple-color);
-}
-.progress {
-  background-color: var(--green-color);
-  align-items: center;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 5px;
-}
-@media (max-width: 800px) {
-  .progress-bar {
-    color: var(--purple-color);
-  }
-}
-.image > img {
-  width: 150px;
-}
-@media (max-width: 600px) {
-  .modal-lg {
-    width: 100% !important;
-  }
-  body::-webkit-scrollbar,
-  .modal::-webkit-scrollbar {
-    display: none;
-  }
+/*---------------Modal 1: Shopping Cart end---------------*/
 
-  /* Hide scrollbar for IE and Edge */
-  body,
-  .modal {
-    -ms-overflow-style: none;
-  }
-}
-.modal-footer > button {
-  background-color: var(--purple-color);
-  color: white;
-}
-.modal-footer > button:hover,
-.modal-footer > button:focus {
-  background-color: var(--purple-color);
-  color: var(--green-color);
-}
-button.close,
-button.close:hover {
-  color: var(--purple-color);
-}
-/*modal 2 */
+/*---------------Modal 2: Billing---------------*/
+/*Most of it is taken from W3Schools.com*/
 #mymodal2.row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -645,35 +643,32 @@ button.close:hover {
   flex-wrap: wrap;
   margin: 0 -16px;
 }
-
+#mymodal2 .progress-bar {
+  width: 60%;
+}
 .col-25 {
   -ms-flex: 25%; /* IE10 */
   flex: 25%;
 }
-
 .col-50 {
   -ms-flex: 50%; /* IE10 */
   flex: 50%;
 }
-
 .col-75 {
   -ms-flex: 75%; /* IE10 */
   flex: 75%;
 }
-
 .col-25,
 .col-50,
 .col-75 {
   padding: 0 16px;
 }
-
 #mymodal2 .container {
   background-color: var(--background-color);
   padding: 5px 20px 15px 20px;
   border: 1px solid lightgrey;
   border-radius: 3px;
 }
-
 #mymodal2 input[type="text"] {
   width: 100%;
   margin-bottom: 20px;
@@ -684,24 +679,21 @@ button.close:hover {
   color: var(--green-color);
 }
 input::placeholder {
-  color: white;
+  color: var(--white-color);
   opacity: 70%;
 }
-
 label {
   margin-bottom: 10px;
   display: block;
 }
-
 .icon-container {
   margin-bottom: 20px;
   padding: 7px 0;
   font-size: 24px;
 }
-
 #mymodal2 .btn {
   background-color: var(--purple-color);
-  color: white;
+  color: var(--white-color);
   padding: 12px;
   margin: 10px 0;
   border: none;
@@ -710,18 +702,15 @@ label {
   cursor: pointer;
   font-size: 17px;
 }
-
 #mymodal2 .btn:hover {
   background-color: purple;
   color: var(--green-color);
 }
-
 span.price {
   float: right;
   color: grey;
 }
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+/*Responsive Modal*/
 @media (max-width: 800px) {
   #mymodal2.row {
     flex-direction: column-reverse;
@@ -730,6 +719,4 @@ span.price {
     margin-bottom: 20px;
   }
 }
-#mymodal2 .progress-bar {
-  width: 60%;
-}
+/*---------------Modal 2: Billing end---------------*/
